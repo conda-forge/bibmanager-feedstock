@@ -1,5 +1,5 @@
 {% set name = "bibmanager" %}
-{% set version = "1.4.1" %}
+{% set version = "1.4.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bibmanager-{{ version }}.tar.gz
-  sha256: 5e188055c24bd7e3ccf9b66415a82fb64c953ff05f66df372dfe8d57f6c97bcc
+  sha256: 1f9fba0fb1ea55b0f3796be7439f9b47be7302d8e2cc1b2929883c718b308e2f
 
 build:
   number: 0

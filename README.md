@@ -1,11 +1,11 @@
-About bibmanager
-================
+About bibmanager-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bibmanager-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pcubillos/bibmanager
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bibmanager-feedstock/blob/main/LICENSE.txt)
 
 Summary: A BibTeX manager for LaTeX projects
 

@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bibmanager-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/bibmanager-{{ version }}.tar.gz
   sha256: b8f1ded4adf1eec547bcccdde4afb018f33edcfc232dfe54de33e698d6fde0f8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - bibm = bibmanager.__main__:main
@@ -20,16 +20,18 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - numpy >=1.15.1
     - packaging >=17.1
     - prompt-toolkit >=3.0.5
     - pygments >=2.2.0
-    - python >=3.6
+    - python >={{ python_min }}
     - requests >=2.19.1
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - bibmanager
 

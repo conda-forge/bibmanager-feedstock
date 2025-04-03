@@ -1,5 +1,5 @@
 {% set name = "bibmanager" %}
-{% set version = "1.4.11" %}
+{% set version = "1.4.13" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/bibmanager-{{ version }}.tar.gz
-  sha256: b8f1ded4adf1eec547bcccdde4afb018f33edcfc232dfe54de33e698d6fde0f8
+  sha256: 6b87963d56e3bf5e76c696de12b6252c6fdb46e002a5e6196c8545a5ebd0b101
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - bibm = bibmanager.__main__:main
@@ -21,10 +21,11 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
-    - numpy >=1.15.1
+    - numpy >=2.0.0
     - packaging >=17.1
-    - prompt-toolkit >=3.0.5
+    - prompt-toolkit >=3.0.48
     - pygments >=2.2.0
     - python >={{ python_min }}
     - requests >=2.19.1
@@ -39,7 +40,8 @@ about:
   home: https://github.com/pcubillos/bibmanager
   summary: A BibTeX manager for LaTeX projects
   license: MIT
-  license_file: LICENSE
+  license_file:
+    - LICENSE
   dev_url: https://github.com/pcubillos/bibmanager
   doc_url: https://bibmanager.readthedocs.io/en/latest/index.html
 

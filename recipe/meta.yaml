@@ -21,10 +21,11 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
-    - numpy >=1.15.1
+    - numpy >=2.0.0
     - packaging >=17.1
-    - prompt-toolkit >=3.0.5
+    - prompt-toolkit >=3.0.48
     - pygments >=2.2.0
     - python >={{ python_min }}
     - requests >=2.19.1

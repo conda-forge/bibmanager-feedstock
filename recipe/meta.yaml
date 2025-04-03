@@ -21,7 +21,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools >=77.0.3
+    - setuptools
   run:
     - numpy >=2.0.0
     - packaging >=17.1
